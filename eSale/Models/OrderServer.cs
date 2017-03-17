@@ -7,11 +7,11 @@ namespace eSale.Models
 {
     public class OrderServer
     {
-        public void InsertOrder()
+        public void InsertOrder(Models.Order order)
         {
 
         }
-        public void DeleteOrderById()
+        public void DeleteOrderById(string id)
         {
 
         }
