@@ -13,15 +13,28 @@ namespace eSale.Controllers
         public ActionResult Index()
         {
            // Models.OrderServer orderService = new Models.OrderServer();
+           // ViewBag.Data = orderService.GetOrders();
            // var order = orderService.GetOrderById("111");
            // ViewBag.CustId = order.CustId;
-
-       
+            //ViewBag.test = "1";
+            List<SelectListItem> custData = new List<SelectListItem>();
+            custData.Add(new SelectListItem()
+            {
+                Text = "叡揚資訊",
+                Value="1"
+            });
+            custData.Add(new SelectListItem()
+            {
+                Text = "叡揚資訊",
+                Value = "2"
+            });
+            ViewBag.custData = custData;
             return View();
         }
 
         public ActionResult InsertOrder()
         {
+   
             return View();
         }
         [HttpPost()]

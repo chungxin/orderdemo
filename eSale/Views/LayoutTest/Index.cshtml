@@ -4,6 +4,12 @@
     Layout = "~/Views/_LayoutPage.cshtml";
 }
 
+@{Html.RenderPartial("Partial1");}
+<br/>
+@{Html.RenderPartial("Partial1");}
+<br />
+@{Html.RenderPartial("Partial1");}
+<br />
 <table class="table table-bordered table-striped">
     <tr>
         <td>測試</td>
@@ -18,4 +24,5 @@
         <td>456</td>
     </tr>
 </table>
-
+@{Html.RenderPartial("Partial1");}
+@{Html.RenderAction("","");}

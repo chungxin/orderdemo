@@ -167,6 +167,7 @@
     </Compile>
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderServer.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -224,10 +225,12 @@
     <Content Include="Views\Order\InsertOrder.cshtml" />
     <Content Include="Views\_LayoutPage.cshtml" />
     <Content Include="Views\LayoutTest\Index.cshtml" />
+    <Content Include="Views\Shared\Partial1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Emp\Models\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -235,6 +238,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eSaleModel\eSaleModel.csproj">
+      <Project>{d09d04ef-7cd7-4476-ae29-eb63b52013d5}</Project>
+      <Name>eSaleModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eSaleService\eSaleService.csproj">
+      <Project>{38421554-3be6-42ae-89c0-4161e5f1830f}</Project>
+      <Name>eSaleService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
